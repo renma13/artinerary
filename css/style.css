@@ -1,0 +1,480 @@
+/* ----------- FONTS START ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Mansalva&display=swap');
+/* ----------- FONTS END ------------- */
+
+/* ----------- NOTES 
+
+1. margins on both left and right is 10%
+
+------------- */
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #6a303b;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    color: #fef5e4;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+#header {
+    margin: 0;
+    width: 100%;
+}
+
+.img-header {
+    object-fit: cover;
+    width: 100%;
+    margin-top: -11%;
+    position: absolute;
+}
+
+.img-logo {
+    position: absolute;
+    width: 13%;
+    margin-top: -1%;
+    padding-left: 10%;
+}
+
+.navi {
+    position: relative;
+    margin-top: 2%;
+    text-align: right;
+    padding-right: 10%; 
+}
+
+.navi a {
+    font-family: 'Mansalva', cursive;
+    text-decoration: none;
+    color: #fef5e4;
+    padding-left: 2%;
+    font-size: 25px;
+    transition: .2s;
+}
+
+.navi a:hover {
+    text-decoration:underline;
+    color: #8a9d6b;
+    transition: .2s;
+}
+
+.img-c1-bg {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+/* ---------- CONTENT 1 START -------------- */
+
+#content-1 {
+    padding-bottom: 15%;
+}
+
+.content-1-container {
+    display: flex;
+    padding-top: 11%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.content-1-container-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 13%;
+    align-self: center;
+    margin-top: -3%;
+}
+
+.img-logo-small-container {
+    min-width: 0;
+}
+
+.img-logo-small {
+    width: 40%;
+}
+
+.c1-p-container {
+    width: 55%;
+}
+
+.c1-p-container p {
+    font-size: 18px;
+}
+
+.c1-button {
+    width: 200px;
+    background-color: #fe7175;
+    color: #fef5e4;
+    font-family: 'Mansalva', cursive;
+    border: 0;
+    padding: 1% 0%;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: .2s;
+}
+
+.c1-button:hover {
+    background-color: #8a9d6b;
+    transition: .2s;
+    cursor: pointer;
+}
+
+/* ---------- CONTENT 1 END -------------- */
+
+/* ---------- CONTENT 2 START -------------- */
+
+.img-c2-bgtop {
+    object-fit: cover;
+    width: 100%;
+    margin-top: -11%;
+    position: absolute;
+}
+
+.img-c2-bgbottom {
+    object-fit: cover;
+    width: 100%;
+    margin-top: -11%;
+    position: absolute;
+}
+
+.content-2 {
+    background-color: #8a9d6b;
+    background-image: url('../images/section3_bg.jpg');
+    margin-top:-1%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    display: flex;
+    position: relative;
+    padding-left: 3%;
+    padding-right: 10%;
+    z-index: 1;
+}
+
+.c2-left-container {
+    padding-left: 5%;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.c2-right-container {
+    align-self: center;
+}
+
+.img1-c2 {
+    width: 80%;
+    position: relative;
+}
+
+/* ---------- CONTENT 2 END -------------- */
+
+/* ---------- CONTENT 3 START -------------- */
+
+.content-3 {
+    background-color: #d6c868;
+    background-image: url('../images/section4_bg.jpg');
+    padding-top: 10%;
+}
+
+.c3-title h1 {
+    color: #fef5e4;
+    text-align: center;
+    font-weight: normal;
+    font-size: 48px;
+    z-index: 3;
+    position: relative;
+    padding-bottom: 1%;
+    padding-top: 2.5%;
+}
+
+.img-c3-bgbottom {
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    margin-top: -5%;
+}
+
+.c3-gallery {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- CONTENT 3 END -------------- */
+
+/* ---------- FOOTER START -------------- */
+
+.footer-paper {
+    margin: 0;
+}
+
+.footer-container {
+    display: flex;
+    margin-top: 14%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #fef5e4;
+    padding-bottom: 3%;
+    background-color: #6a303b;
+    width: auto;
+}
+
+.footer-container h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+
+.footer-container p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer1 {
+    margin-right: 20%;
+}
+
+.footer2 {
+    margin-right: 20%;
+}
+
+.footer3 {
+    padding-right: 10%;
+}
+
+.footer3 a {
+    color: #fef5e4;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.footer3 a:hover {
+    text-decoration: underline;
+    transition: .2s;
+}
+
+.footer4 {
+    align-self: flex-end;
+}
+
+.material-symbols-outlined {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fef5e4;
+}
+
+.material-symbols-outlined:hover {
+    cursor: pointer;
+}
+
+#footer-extra {
+    background-color: #37151b;
+    width: 100%;
+    height: 20px;
+}
+
+/* ---------- FOOTER END -------------- */
+
+
+/* ---------- FAQ CSS START -------------- */
+
+.faq-container {
+    display: flex;
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+}
+
+.faq-content h1 {
+    color: #fe7175;
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 40px;
+}
+
+.faq-content li {
+    font-family: 'Nunito', sans-serif;
+    width: 70%;
+    color: #6a303b;
+}
+
+.faq-content ol li {
+    font-weight: 800;
+    line-height: 200%;
+    margin: 0 auto;
+}
+
+.faq-content ul li {
+    font-weight: normal;
+    list-style: none;
+}
+
+.faq-content ul li a {
+    text-decoration: none;
+    color: #fe7175;
+    font-weight: 800;
+    transition: .2s;
+}
+
+.faq-content ul li a:hover {
+    transition: .2s;
+    text-decoration: underline;
+    color: #8a9d6b;
+}
+
+/* ---------- FAQ CSS END -------------- */
+
+
+/* ---------- FEEDBACK CSS START -------------- */
+
+.feedback-container {
+    display: flex;
+    margin-top: 12%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #37151b;
+    padding-bottom: 3%;
+    width: auto;
+}
+
+.feedback-container a {
+    color: #fe7175;
+    font-family: 'Nunito', sans-serif;
+    transition: .2s;
+    text-decoration: none;
+}
+
+.feedback-container a:hover {
+    color: #8a9d6b;
+    transition: .2s;
+    text-decoration: underline;
+}
+
+.feedback-container h1 {
+    color: #fe7175;
+    font-size: 48px;
+    margin-top: 0;
+}
+
+.fa-twitter {
+    color: #1d9bf0;
+    font-size: 17px;
+}
+
+.feedback-content1 {
+    width: 55%;
+    margin-right: 20%;
+}
+
+.img1-feedback {
+    width:100%;
+    margin-top: 10%;
+    margin-left: -15%;
+}
+
+.img2-feedback-container {
+    text-align: right;
+    margin-top: 15%;
+    margin-right: 5%;
+    position: absolute;
+}
+
+.img2-feedback {
+    width: 30%;
+}
+
+label {
+    font-weight: 800;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #fe7175;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #fe7175;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #8a9d6b;
+    transition: .2s;
+  }
+  
+  .form-container {
+    border-radius: 5px;
+    background-color: #d6c868;
+    padding: 20px;
+  }
+
+/* ---------- FEEDBACK CSS END -------------- */
+
+
+
+/* ---------- DOWNLOAD CSS START -------------- */
+
+.dl-container1 h1 {
+    color: #fe7175;
+}
+
+.dl-container1 {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 9%;
+}
+
+.dl-content1:first-child {
+    padding-right: 15%;
+}
+
+.dl-container2 h1 {
+    color: #fe7175;
+    text-align: center;
+    margin-top: 0;
+}
+
+.dl-container2 {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.dl-container2 img {
+    align-self: center;
+    padding-bottom: 3%;
+}
+
+.dl-container2-img {
+    width: 60%;
+}
+
+.squiggle6 {
+    width: 8%;
+    margin-top: 3%;
+}
+
+/* ---------- DOWNLOAD CSS END -------------- */
