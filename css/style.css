@@ -487,13 +487,14 @@ input[type=text], select, textarea {
     padding-top: 9%;
     padding-left: 10%;
     padding-right: 10%;
+    flex-direction:column;
 }
 
 .abt-content {
     display: flex;
     flex-direction: column;
     color: #6a303b;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
 }
 
 .abt-content h1 {
@@ -517,7 +518,7 @@ input[type=text], select, textarea {
 .ppl-container {
     display: flex;
     flex-direction: row;
-    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .ppl-container h3 {
@@ -556,6 +557,7 @@ input[type=text], select, textarea {
 
 .ppl-img {
     border-radius: 100%;
+    margin-top: 20%;
 }
 
 /* ---------- ABOUT CSS END -------------- */

@@ -1,0 +1,21 @@
+body {
+    background-image: url('../images/bg_abt.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fef5e4;
+}
+
+#content-1 {
+    padding-bottom: 5%;
+}
+
+.footer-container {
+    display: flex;
+    margin-top: -1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #fef5e4;
+    padding-bottom: 3%;
+    background-color: #6a303b;
+    width: auto;
+}
