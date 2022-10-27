@@ -112,6 +112,7 @@ p {
 
 .c1-p-container p {
     font-size: 18px;
+    color: #6a303b;
 }
 
 .c1-button {
@@ -478,3 +479,83 @@ input[type=text], select, textarea {
 }
 
 /* ---------- DOWNLOAD CSS END -------------- */
+
+/* ---------- ABOUT CSS START -------------- */
+
+.abt-container {
+    display: flex;
+    padding-top: 9%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.abt-content {
+    display: flex;
+    flex-direction: column;
+    color: #6a303b;
+    margin-bottom: 5%;
+}
+
+.abt-content h1 {
+    color: #fe7175;
+    text-align: center;
+}
+
+.abt-content a {
+    color: #fe7175;
+    font-weight: 800;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.abt-content a:hover {
+    color: #8a9d6b;
+    text-decoration: underline;
+    transition: .2s;
+}
+
+.ppl-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.ppl-container h3 {
+    font-family: 'Mansalva', cursive;
+    font-weight: normal;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+.ppl-container h4 {
+    font-family: 'Mansalva', cursive;
+    font-weight: normal;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.ppl-container p {
+    padding-bottom: 50%;
+}
+
+.ppl {
+    background-color: #fe7175;
+    color: #fef5e4;
+    border-radius: 300px;
+    height: auto;
+    padding: 2% 5%;
+    margin-right: 3%;
+}
+
+.ppl:last-child {
+    margin-right: 0;
+}
+
+.ppl-img {
+    border-radius: 100%;
+}
+
+/* ---------- ABOUT CSS END -------------- */

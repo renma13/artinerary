@@ -1,5 +1,6 @@
 body {
-    background-color: #d6c868;
+    background-image: url('../images/bg_lines.jpg');
+    background-size: cover;
 }
 
 #content-1 {
