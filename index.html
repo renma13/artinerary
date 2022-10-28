@@ -22,15 +22,45 @@
         <a href="faq.html">FAQs</a> 
         <a href="feedback.html">Feedback</a>
     </div>
+
+    <!-- NAVBAR START -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html">About</a> 
+            </li>
+            <li class="nav-item">
+                <a href="download.html">Download</a> 
+            </li>
+            <li class="nav-item">
+                <a href="faq.html">FAQs</a> 
+            </li>
+            <li class="nav-item">
+                <a href="feedback.html">Feedback</a>
+            </li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
 </div>
 
-<img class="img-c1-bg" src="images/bg_lines.jpg">
+<!-- <img class="img-c1-bg" src="images/bg_lines.jpg"> -->
 
 <div id="content-1">
-    <div class="content-1-container">
-        <img class="img1-c1" src="https://fakeimg.pl/500x500/?text=500x500" style="max-width: 100%;">
+    <div class="c1-container">
+        <div class="c1-container1">
+            <img class="img1-c1" src="https://fakeimg.pl/500x500/?text=500x500">
+        </div>
 
-        <div class="content-1-container-container">
+        <div class="c1-container2">
             <div class="img-logo-small-container">
                 <img class="img-logo-small" src="images/logo.png">
             </div>
@@ -112,6 +142,16 @@
 <div id="footer-extra">
     
 </div>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    })
+</script>
     
 </body>
 </html>

@@ -1,6 +1,9 @@
 body {
-    background-image: url('../images/bg_lines_faq.jpg');
-    background-size: contain;
+    background: url('../images/bg_lines_faq.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #content-1 {

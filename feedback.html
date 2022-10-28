@@ -13,18 +13,46 @@
 </head>
 <body>
 
-<div id="header">
-    <img class="img-header" src="images/header.png">
-    <img class="img-logo" src="images/logo.png">
-
-    <div class="navi">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a> 
-        <a href="download.html">Download</a> 
-        <a href="faq.html">FAQs</a> 
-        <a href="feedback.html">Feedback</a>
+    <div id="header">
+        <img class="img-header" src="images/header.png">
+        <img class="img-logo" src="images/logo.png">
+    
+        <div class="navi">
+            <a href="#">Home</a>
+            <a href="about.html">About</a> 
+            <a href="download.html">Download</a> 
+            <a href="faq.html">FAQs</a> 
+            <a href="feedback.html">Feedback</a>
+        </div>
+    
+        <!-- NAVBAR START -->
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html">About</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="download.html">Download</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html">FAQs</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
     </div>
-</div>
 
 <div id="content-1">
     <div class="feedback-container">
@@ -103,5 +131,15 @@
     
 </div>
     
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    })
+</script>
 </body>
 </html>
