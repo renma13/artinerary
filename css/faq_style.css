@@ -1,13 +1,11 @@
 body {
-    background: url('../images/bg_lines_faq.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url('../images/bg_lines.jpg');
     background-size: cover;
 }
 
 #content-1 {
     padding-bottom: 5%;
+    background-image: none;
 }
 
 .footer-container {

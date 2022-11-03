@@ -227,6 +227,7 @@ p {
 .content-3 {
     background-color: #d6c868;
     background-image: url('../images/section4_bg.jpg');
+    background-size:cover;
     padding-top: 10%;
 }
 
