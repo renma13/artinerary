@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/style.css"> 
     <link rel="stylesheet" href="css/feedback_style.css"> 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- AniCollection.css library -->
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+
     <title>The Artinerary | Feedback</title>
 </head>
 <body>
@@ -57,17 +61,17 @@
 <div id="content-1">
     <div class="feedback-container">
         <div class="feedback-content1">
-            <h1>Send us your feedback!</h1>
-            <p>Since this is our first attempt at making an art journal, we'd love to hear your thoughts on how it helped you as a digital artist! Your feedback would be extremely helpful to us as we look for ways to improve the journal in the future.❤</p>
+            <h1 data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeInDown animated">Send us your feedback!</h1>
+            <p data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeIn animated">Since this is our first attempt at making an art journal, we'd love to hear your thoughts on how it helped you as a digital artist! Your feedback would be extremely helpful to us as we look for ways to improve the journal in the future.❤</p>
 
-            <p>Don’t forget to check us out on Twitter, too!</p>
-            <p><i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;<a href="#">@theartineraryjournal</a></p>
+            <p data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeIn animated">Don’t forget to check us out on Twitter, too!</p>
+            <p data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeIn animated"><i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;<a href="#">@theartineraryjournal</a></p>
 
             <img class="img1-feedback" src="images/girl.png">
         </div>
 
         <div class="feedback-content2">
-            <div class="form-container">
+            <div class="form-container" data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeIn animated">
                 <form action="/action_page.php">
                   <label for="fname">First Name</label>
                   <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -140,6 +144,39 @@
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
     })
+</script>
+
+<script src="anijs-min.js"></script>
+<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+
+<script>
+window.addEventListener('load', videoScroll);
+window.addEventListener('scroll', videoScroll);
+
+function videoScroll() {
+
+  if ( document.querySelectorAll('video[autoplay]').length > 0) {
+    var windowHeight = window.innerHeight,
+        videoEl = document.querySelectorAll('video[autoplay]');
+
+    for (var i = 0; i < videoEl.length; i++) {
+
+      var thisVideoEl = videoEl[i],
+          videoHeight = thisVideoEl.clientHeight,
+          videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+      if ( videoClientRect <= ( (windowHeight) - (videoHeight*.5) ) && videoClientRect >= ( 0 - ( videoHeight*.5 ) ) ) {
+        thisVideoEl.play();
+      } else {
+        thisVideoEl.currentTime = 0;
+      }
+
+    }
+  }
+
+}
+
 </script>
 </body>
 </html>

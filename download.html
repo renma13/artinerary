@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/style.css"> 
     <link rel="stylesheet" href="css/dl_style.css"> 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- AniCollection.css library -->
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+
     <title>The Artinerary | FAQs</title>
 </head>
 <body>
@@ -28,7 +32,7 @@
         <nav class="navbar">
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="about.html">About</a> 
@@ -56,27 +60,29 @@
 <div id="content-1">
     <div class="dl-container1">
         <div class="dl-content1">
-            <h1>About the Journal!</h1>
-            <p>The Artinerary is a downloadable (and printable!) journal for artists to use and help them be more organized with their personal projects and commissions! Its contents have been consulted and reviewed by professional artists for accuracy and validity.</p>
+            <h1 data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeInDown animated">About the Journal!</h1>
+            <p data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeIn animated">The Artinerary is a downloadable (and printable!) journal for artists to use and help them be more organized with their personal projects and commissions! Its contents have been consulted and reviewed by professional artists for accuracy and validity.</p>
         </div>
 
         <div class="dl-content2">
-            <h1>How to Use</h1>
-            <p>After downloading the journal, you can choose to print it as a hard copy or keep it digital. You're free to personalize the journal however you'd like by using stickers and doodling on pages! Once you're satisfied with how it looks, you can start your journal journey! Enjoy!</p>
+            <h1 data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeInDown animated">How to Use</h1>
+            <p data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeIn animated">After downloading the journal, you can choose to print it as a hard copy or keep it digital. You're free to personalize the journal however you'd like by using stickers and doodling on pages! Once you're satisfied with how it looks, you can start your journal journey! Enjoy!</p>
         </div>
     </div>
 
-    <div class="dl-container2">
+    <div class="dl-container2" data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeIn animated">
         <img class="squiggle6" src="images/squiggle6.png">
         <h1>Contents</h1>
-        <img class="dl-container2-img" src="images/dl-img1.png">
+        <a href="images/dl-img1.png" target="_blank">
+            <img class="dl-container2-img" src="images/dl-img1.png">
+        </a>
     </div>
 
     <div class="dl-container3">
 
     </div>
 
-    <div class="dl-container4">
+    <div class="dl-container4" data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeIn animated">
         <center><button class="c1-button2">Download Now!</button></center>
     </div>
     </div>
@@ -126,6 +132,39 @@
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
     })
+</script>
+
+<script src="anijs-min.js"></script>
+<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+
+<script>
+window.addEventListener('load', videoScroll);
+window.addEventListener('scroll', videoScroll);
+
+function videoScroll() {
+
+  if ( document.querySelectorAll('video[autoplay]').length > 0) {
+    var windowHeight = window.innerHeight,
+        videoEl = document.querySelectorAll('video[autoplay]');
+
+    for (var i = 0; i < videoEl.length; i++) {
+
+      var thisVideoEl = videoEl[i],
+          videoHeight = thisVideoEl.clientHeight,
+          videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+      if ( videoClientRect <= ( (windowHeight) - (videoHeight*.5) ) && videoClientRect >= ( 0 - ( videoHeight*.5 ) ) ) {
+        thisVideoEl.play();
+      } else {
+        thisVideoEl.currentTime = 0;
+      }
+
+    }
+  }
+
+}
+
 </script>
 </body>
 </html>

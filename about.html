@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/style.css"> 
     <link rel="stylesheet" href="css/abt_style.css"> 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- AniCollection.css library -->
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+
     <title>The Artinerary | FAQs</title>
 </head>
 <body>
@@ -28,7 +32,7 @@
         <nav class="navbar">
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="about.html">About</a> 
@@ -56,12 +60,12 @@
 <div id="content-1">
     <div class="abt-container">
         <div class="abt-content">
-            <h1>About the Creators!</h1>
-            <p>The Artinerary journal is a project created by a group MMA Students from De La Salle-College of Saint Benilde as their Thesis project.</p>
-            <p>Based on the results of their  research <a href="#">“The Common Misconceptions of Digital Illustration”</a>, they found out there was a disconnection between the artist and the commissioners. In order to address this, the creators made the Artinenary Journal to provide artists  with a medium to track the progress of their projects and commissions.</p>
+            <h1 data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeInDown animated">About the Creators!</h1>
+            <p data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeInDown animated">The Artinerary journal is a project created by a group MMA Students from De La Salle-College of Saint Benilde as their Thesis project.</p>
+            <p data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeInDown animated">Based on the results of their  research <a href="#">“The Common Misconceptions of Digital Illustration”</a>, they found out there was a disconnection between the artist and the commissioners. In order to address this, the creators made the Artinenary Journal to provide artists  with a medium to track the progress of their projects and commissions.</p>
         </div>
 
-        <div class="ppl-container">
+        <div class="ppl-container" data-anijs="if: onRunFinished, on: $AniJSNotifier, do: zoomIn animated">
             <div class="ppl">
                 <img class="ppl-img" src="images/gabe_icon.jpg">
                 <h3>Gabe Briones</h3>
@@ -137,6 +141,39 @@
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
     })
+</script>
+
+<script src="anijs-min.js"></script>
+<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+
+<script>
+window.addEventListener('load', videoScroll);
+window.addEventListener('scroll', videoScroll);
+
+function videoScroll() {
+
+  if ( document.querySelectorAll('video[autoplay]').length > 0) {
+    var windowHeight = window.innerHeight,
+        videoEl = document.querySelectorAll('video[autoplay]');
+
+    for (var i = 0; i < videoEl.length; i++) {
+
+      var thisVideoEl = videoEl[i],
+          videoHeight = thisVideoEl.clientHeight,
+          videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+      if ( videoClientRect <= ( (windowHeight) - (videoHeight*.5) ) && videoClientRect >= ( 0 - ( videoHeight*.5 ) ) ) {
+        thisVideoEl.play();
+      } else {
+        thisVideoEl.currentTime = 0;
+      }
+
+    }
+  }
+
+}
+
 </script>
 </body>
 </html>

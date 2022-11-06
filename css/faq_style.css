@@ -1,6 +1,7 @@
 body {
     background: url('../images/bg_lines.jpg');
-    background-size: cover;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
 }
 
 #content-1 {
