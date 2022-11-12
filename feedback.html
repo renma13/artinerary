@@ -24,9 +24,9 @@
         <div class="navi">
             <a href="index.html">Home</a>
             <a href="about.html">About</a> 
-            <a href="download.html">Download</a> 
             <a href="faq.html">FAQs</a> 
             <a href="feedback.html">Feedback</a>
+            <a class="dl" href="download.html">Download!</a>
         </div>
     
         <!-- NAVBAR START -->
@@ -67,7 +67,7 @@
             <p data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeIn animated">Don’t forget to check us out on Twitter, too!</p>
             <p data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeIn animated"><i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;<a href="#">@theartineraryjournal</a></p>
 
-            <img class="img1-feedback" src="images/girl.png">
+            <img class="img1-feedback" src="images/girl.png" data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeIn animated">
         </div>
 
         <div class="feedback-content2">
@@ -79,12 +79,8 @@
                   <label for="lname">Last Name</label>
                   <input type="text" id="lname" name="lastname" placeholder="Your last name..">
               
-                  <label for="country">Country</label>
-                  <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select>
+                  <label for="country">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your email...">
               
                   <label for="subject">Subject</label>
                   <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>

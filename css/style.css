@@ -21,6 +21,10 @@ body {
     margin: 0;
 }
 
+textarea {
+    font-family: 'Nunito', sans-serif;
+}
+
 h1 {
     font-family: 'Berkshire Swash', cursive;
     color: #fef5e4;
@@ -85,6 +89,21 @@ p {
     color: #8a9d6b;
     transition: .2s;
     background-size: 0 0.1em, 100% 0.1em;
+}
+
+a.dl {
+    background: none;
+    background-color: #8a9d6b;
+    padding: .2% 1%;
+    border-radius: 15px;;
+    color: #fef5e4;
+    transition: .3s;
+}
+
+a.dl:hover {
+    background-color: #fe7175;
+    color: #fef5e4;
+    transition: .3s;
 }
 
 /* -----
@@ -214,7 +233,6 @@ p {
 }
 
 .c1-container3 img {
-    border-radius: 50%;
     margin: 8% auto;
 }
 
@@ -307,6 +325,60 @@ p {
 
 .c1-c2-4-2 {
     margin-left: 5%;
+}
+
+img.squiggle1 {
+    width: 8%;
+    position: absolute;
+    right: 0;
+    margin-right: 7%;
+    top: 70%;
+    transform: rotate(230deg);
+}
+
+img.squiggles {
+    width: 30%;
+    position: absolute;
+    left: -23%;
+    margin-left: 7%;
+    top: 100%;
+    transform: rotate(160deg);
+}
+
+img.tapeheart {
+    width: 75%;
+    position: absolute;
+    right: 0;
+    margin-right: -40%;
+    top: 160%;
+    transform: rotate(-160deg);
+}
+
+img.home-sticker1 {
+    width: 9%;
+    position: absolute;
+    left: 0;
+    margin-left: 3%;
+    top: 220%;
+    transform: rotate(20deg);
+}
+
+img.home-sticker2 {
+    width: 8%;
+    position: absolute;
+    right: 0;
+    margin-right: 6%;
+    top: 290%;
+    transform: rotate(-30deg);
+}
+
+img.home-sticker3 {
+    width: 10%;
+    position: absolute;
+    left: 0;
+    margin-left: 3%;
+    top: 350%;
+    transform: rotate(-20deg);
 }
 
 /* ---------- CONTENT 1 END -------------- */
@@ -467,6 +539,10 @@ p {
     margin-bottom: 0;
 }
 
+#footer {
+    font-size: 13px;
+}
+
 /* ---------- FOOTER END -------------- */
 
 
@@ -521,6 +597,33 @@ p {
     transition: .2s;
     text-decoration: underline;
     color: #8a9d6b;
+}
+
+img.faq-sticker1 {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+img.faq-sticker2 {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    margin-top: 20%;
+}
+
+img.faq-sticker3 {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    margin-left: 6%;
+    margin-top: 40%;
 }
 
 /* ---------- FAQ CSS END -------------- */
@@ -707,6 +810,14 @@ input[type=text], select, textarea {
     margin-bottom: 4%;
 }
 
+img.abt-tape {
+    width: 80%;
+    position: absolute;
+    transform: rotate(30deg);
+    top: 115%;
+    left: -41%;
+}
+
 .abt-content p {
     animation-delay: .2s;
 }
@@ -888,6 +999,10 @@ input[type=text], select, textarea {
     .navi {
         display: none;
     }
+    
+    img.faq-sticker1, img.faq-sticker2, img.faq-sticker3, img.abt-tape, img.squiggle1, img.squiggles, img.tapeheart, img.home-sticker1, img.home-sticker2, img.home-sticker3 {
+        display: none;
+    }
 
     #header {
         padding-top: 2%;
@@ -917,6 +1032,16 @@ input[type=text], select, textarea {
         padding-bottom: 3%;
         font-size: 110%;
         border-radius: 6px;
+    }
+
+    .content-2 {
+        background-color: #8a9d6b;
+        background-image: none;
+    }
+
+    .content-3 {
+        background-color: #d6c868;
+        background-image: none;
     }
 
     .feedback-container {
