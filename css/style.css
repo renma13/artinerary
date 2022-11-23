@@ -1186,6 +1186,11 @@ img.abt-tape {
         display: none;
     }
 
+    button.home-dl-button {
+        margin-top: -10%;
+        margin-bottom: 15%;
+    }
+
     .text {
         margin: 0;
         margin-top: 10%;
@@ -1453,12 +1458,14 @@ img.abt-tape {
 
     .c2-left-container img {
         width: 100%;
+        margin-top: 10%;
     }
 
     .c2-right-container {
         width: 150%;
-        margin-left: -35%;
-        margin-top: -10%;
+        margin-left: -20%;
+        margin-top: 5%;
+        margin-bottom: 15%;
     }
 
     .c3-title h1 {
