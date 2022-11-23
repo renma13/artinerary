@@ -154,6 +154,7 @@ button.home-dl-button:hover {
     width: 100%;
     text-align: center;
     margin-bottom: 30%;
+    margin-top: 2%;
 }
 
 .img1-c1 {
@@ -165,7 +166,6 @@ button.home-dl-button:hover {
 
 .img1-c1-cont1 {
     position: inherit;
-    width: 100%;
 }
 
 .img1-c2 {
@@ -174,7 +174,7 @@ button.home-dl-button:hover {
 }
 
 .c1-container1 img {
-    width: 100%;
+    width: 80%;
 }
 
 .c1-container1 {
@@ -228,6 +228,10 @@ button.home-dl-button:hover {
     border-radius: 10px;
     font-size: 150%;
     transition: .2s;
+    
+    animation-name: pulse;
+    animation-iteration-count:infinite;
+    animation-duration: 1s;
 }
 
 .c1-p-container a {
@@ -1409,11 +1413,12 @@ img.abt-tape {
         justify-content: center;
         text-align: center;
         margin-bottom: 100%;
-        margin-top: 60%;
+        margin-top: 20%;
     }
 
     .c1-container1 {
-        display: none;
+        width:90%;
+        margin-bottom: 5%;
     }
 
     .c1-container2 {
