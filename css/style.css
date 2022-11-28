@@ -808,6 +808,11 @@ input[type=text], select, textarea {
     color: #fe7175;
 }
 
+.button-dl {
+    text-decoration: none;
+    color: #fef5e4;
+}
+
 .dl-container1 {
     display: flex;
     margin-left: 10%;
